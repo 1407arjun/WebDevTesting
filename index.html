@@ -9,8 +9,10 @@
     </head>
 
     <body>
+      <div class="container">
         <h1>Expense Tracker</h1>
-        <div id="expenseForm">
+        <div class="row">
+          <div id="expenseForm" class="col-*-4">
             <h4>Enter your expense details:</h4><br>
             <form>
                 <div class="input-group mb-3">
@@ -49,8 +51,9 @@
                     <button id="clrallbtn" type="button" class="button btn btn-outline-primary btn-lg">Clear All</button>
                 </div>    
             </form>
-        </div>
-        <div id="expenseTable">
+          </div>
+          <div id="expenseTable" class="col-*-8">
+            <h4>Your expenses:</h4><br>
             <table class="table table-bordered table-hover table-dark">
                 <caption>List of expenses (press del to delete the selected expense)</caption>
                 <thead class="thead-light">
@@ -77,9 +80,10 @@
                   </tfoot>
               </table>
             <h6></h6>
+          </div>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="index.js" charset="utf-8"></script>
+      </div>    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="index.js" charset="utf-8"></script>
     </body>
 </html>
